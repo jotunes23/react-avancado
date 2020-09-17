@@ -48,6 +48,13 @@ Customizações do arquivo tsconfig.json:
 
 - **strict(false)**: Mudaremos para true para que o TypeScript seja mais exigente quanto as melhores práticas de tipagem.
 
+## Customizando a Estrutura de Pastas
+
+Vamos criar uma nova pasta chamada 'src' onde colocaremos todo o projeto, isso para podermos separar bem o que é a parte de código da parte de configuração de projeto, então:
+
+- Mova a pasta 'pages' para a pasta 'src'.
+- Renomeie o arquivo index.js para extensão tsx (O TypeScript utiliza as extensões .ts ou tsx, a primeira utilizada para arquivos com funcções e a última usada em arquivos com estrutura JSX).
+
 ## Referência
 
 - [NextJS](https://nextjs.org/docs)
