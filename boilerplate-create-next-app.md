@@ -44,6 +44,10 @@ yarn add --dev typescript @types/react @types/node
 
 Ao rodar o comando 'yarn dev', o arquivo json tscongig.json será populado com uma configuração default e criará um arquivo 'next-env.d.ts', que é um arquivo chamado de 'declaration file', nesse arquivo são declarados os tipos para podermos trabalhar com os autocompletes, no caso desse arquivo, os types do Next.
 
+Customizações do arquivo tsconfig.json:
+
+- **strict(false)**: Mudaremos para true para que o TypeScript seja mais exigente quanto as melhores práticas de tipagem.
+
 ## Referência
 
 - [NextJS](https://nextjs.org/docs)
