@@ -28,6 +28,23 @@ O Create-Next-App já vem com um estrutura básica com os seguintes pastas e arq
 - **public**: Arquivos públicos, em greal arquivos estáticos como Favicon, logos, imagens, robots, enfim, tudo o que queremos que seja público, acessado direto numa rota.
 - **index.js**: Página padrão com o exemplo de código.
 
+## TypeScript
+
+Para trabalharmos com o TypeScript primeiro precisamos criar o arquivo de configuração do compilador do TypeScript na raiz do projeto:
+
+```bash
+touch tsconfig.json
+```
+
+Depois instale os pacotes necessários, o 'typescript' que é responsável pela compilação do projeto e os types para o React e Node que facilitarão o autocomplete do intellisense para termos um editor mais inteligente, como o TypeScript só roda em desenvolvimento, adicionamos flag '--dev':
+
+```bash
+yarn add --dev typescript @types/react @types/node
+```
+
+Ao rodar o comando 'yarn dev', o arquivo json tscongig.json será populado com uma configuração default e criará um arquivo 'next-env.d.ts', que é um arquivo chamado de 'declaration file', nesse arquivo são declarados os tipos para podermos trabalhar com os autocompletes, no caso desse arquivo, os types do Next.
+
 ## Referência
 
 - [NextJS](https://nextjs.org/docs)
+- [NextJS - TypeScript](https://nextjs.org/docs/basic-features/typescript)
